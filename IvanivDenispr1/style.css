@@ -1,0 +1,57 @@
+body {
+    background-color: lightgreen;
+     font-family: Arial,
+        sans-serif;
+    color: brown;
+    line-height: 1.6em;
+}
+   
+#page-title {
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 800em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 600;
+    text-align: left;
+}
+
+.intro {
+    font-size: 1.8em;
+    font-weight: 600;
+    text-decoration-line: underline;
+    text-align: center;
+}
+
+strong {
+    color: goldenrod;
+}
+
+em {
+    color: seagreen;
+    text-decoration-line: line-through;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: hsla(51, 86%, 56%, 0.792);
+}
+
+ul,
+ol {
+    background: darkseagreen;
+    color: green;
+    font-size: 1.3em;
+    font-style: italic;
+}
