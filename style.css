@@ -2,8 +2,19 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
+}
 
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.card {
+    color: #6678ff;
+    padding: 20px;
+    border: 2px solid #e0e0e0#e0e0e0;
+    margin-bottom: 25px;
 }
 
 body {
@@ -13,7 +24,6 @@ body {
     color: brown;
     line-height: 1.6em;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-
 }
 
 table {
@@ -79,25 +89,4 @@ ol {
     color: green;
     font-size: 1.3em;
     font-style: italic;
-}
-
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.card {
-    color: #6678ff;
-    padding: 20px;
-    border: 2px solid rgb(255, 255, 255)#e0e0e0;
-    margin-bottom: 25px;
-
-}
-
-.gallery {
-    max-width: 100%;
-    padding: 10px;
-    height: auto;
-    border-radius: 6px;
 }
