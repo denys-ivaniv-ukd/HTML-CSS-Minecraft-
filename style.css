@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: lightgreen;
     font-family: Arial,
@@ -71,11 +77,6 @@ ol {
     font-size: 1.3em;
     font-style: italic;
 }
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 .container {
     max-width: 900px;
@@ -86,7 +87,7 @@ ol {
 .card {
     color: #6678ff;
     padding: 20px;
-    border: 2px solid #e0e0e0#e0e0e0;
+    border: 2px solid rgb(255, 255, 255)#e0e0e0;
     margin-bottom: 25px;
 
 }
