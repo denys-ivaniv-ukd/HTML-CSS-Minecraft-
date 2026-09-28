@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+
 }
 
 body {
@@ -11,6 +13,7 @@ body {
     color: brown;
     line-height: 1.6em;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
 }
 
 table {
@@ -91,7 +94,8 @@ ol {
     margin-bottom: 25px;
 
 }
-.gallery{
+
+.gallery {
     max-width: 100%;
     padding: 10px;
     height: auto;
