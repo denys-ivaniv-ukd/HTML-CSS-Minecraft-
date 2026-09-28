@@ -1,8 +1,10 @@
+html{
+     scroll-behavior: smooth;
+}
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 
 }
 
@@ -13,6 +15,7 @@ body {
     color: brown;
     line-height: 1.6em;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    /* scroll-padding-top: inherit; */
 
 }
 
@@ -82,7 +85,7 @@ ol {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -100,4 +103,7 @@ ol {
     padding: 10px;
     height: auto;
     border-radius: 6px;
+}
+.container-logo{
+    padding: 20px;
 }
