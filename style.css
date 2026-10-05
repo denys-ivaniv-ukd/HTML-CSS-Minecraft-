@@ -1,6 +1,8 @@
-html{
-     scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,7 +17,9 @@ body {
     color: brown;
     line-height: 1.6em;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    /* scroll-padding-top: inherit; */
+    padding-top: 20px;
+    scroll-behavior: smooth;
+    padding-top: 80px;
 
 }
 
@@ -28,10 +32,6 @@ th,
 td {
     padding: 10px 12px;
     border: 1px solid #ccc;
-}
-
-.gallery {
-    margin: 0 auto;
 }
 
 #page-title {
@@ -99,11 +99,112 @@ ol {
 }
 
 .gallery {
+    margin: 0 auto;
     max-width: 100%;
     padding: 10px;
     height: auto;
     border-radius: 6px;
 }
-.container-logo{
+
+.container-logo {
     padding: 20px;
+
+}
+
+.start {
+    padding: 20px;
+    background-color: goldenrod;
+}
+
+.site-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    border: 5px solid greenyellow;
+    height: 45%;
+    width: 100%;
+    z-index: 100;
+}
+
+.container-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    color: #6678ff;
+    padding: 20px;
+    border: 2px solid rgb(255, 255, 255)#e0e0e0;
+    margin-bottom: 25px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+#photo {
+    padding: 20px 0;
+    background-color: rgba(44, 170, 33, 0.558);
+}
+
+#viki {
+    padding: 20px 0;
+    background-color: springgreen;
+}
+
+#music {
+    background-color: rgba(44, 170, 33, 0.558);
+    padding: 20px 0;
+}
+
+.container {
+    position: relative;
+    padding: 25px 20px;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    background-color: gold;
+    color: black;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #e2ffe4;
+    color: black;
+    border-radius: 7px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 50% solid #1b5e20;
+    font-size: 24px;
+    font-weight: 1000;
+    box-shadow: 10px 5px 5px;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: yellow;
 }
