@@ -7,7 +7,6 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 body {
@@ -35,6 +34,7 @@ td {
 }
 
 #page-title {
+    padding: 10px;
     font-size: 3em;
     font-weight: 800;
     text-align: center;
@@ -107,22 +107,22 @@ ol {
 }
 
 .container-logo {
-    padding: 20px;
-
+    padding: 3px;
 }
 
 .start {
-    padding: 20px;
+    padding: 30px;
     background-color: goldenrod;
 }
 
 .site-header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100px;
+    position: sticky;
+    top: 0px;
+    right: 0px;
+    width: 10px;
     border: 5px solid greenyellow;
-    height: 45%;
+    box-shadow: black 10px;
+    height: 312px;
     width: 100%;
     z-index: 100;
 }
@@ -159,7 +159,7 @@ ol {
 }
 
 #viki {
-    padding: 20px 0;
+    padding: 10px 5px;
     background-color: springgreen;
 }
 
@@ -170,20 +170,21 @@ ol {
 
 .container {
     position: relative;
-    padding: 25px 20px;
+    padding: 35px 20px;
 }
 
 .badge {
     position: absolute;
-    top: -10px;
-    right: 15px;
+    font-family: 'Times New Roman', Times;
+    top: 5px;
+    left: 400px;
     width: 200px;
     height: auto;
     text-align: center;
     background-color: gold;
-    color: black;
-    padding: 4px 10px;
-    border-radius: 4px;
+    color:#ed8477;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .back-to-top {
@@ -200,11 +201,20 @@ ol {
     border-radius: 8px;
     border: 50% solid #1b5e20;
     font-size: 24px;
-    font-weight: 1000;
+    font-weight: 800;
     box-shadow: 10px 5px 5px;
     z-index: 1000;
 }
 
 .back-to-top:hover {
     background-color: yellow;
+}
+
+#links {
+    position: relative;
+    padding: 20px;
+    right: -1px;
+    bottom: 80px;
+    background-color: #7eb858;
+    list-style: none
 }
