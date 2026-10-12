@@ -182,7 +182,7 @@ ol {
     height: auto;
     text-align: center;
     background-color: gold;
-    color:#ed8477;
+    color: #ed8477;
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -217,4 +217,23 @@ ol {
     bottom: 80px;
     background-color: #7eb858;
     list-style: none
+}
+
+aside {
+    width: 30%;
+    padding-left: 10px;
+    margin-left: 1px;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+
+footer{
+    max-width: 100%;
+    font-weight: 600;
+    padding: 10px 5px;
+    color: #1e3b26;
+    background-color: #afe6a5;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
 }
