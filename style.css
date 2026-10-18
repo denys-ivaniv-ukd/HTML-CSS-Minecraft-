@@ -221,6 +221,7 @@ ol {
 
 aside {
     width: 30%;
+    padding: 3px;
     padding-left: 10px;
     margin-left: 1px;
     box-shadow: inset 5px 0 5px -5px #29627e;
@@ -228,7 +229,7 @@ aside {
     color: #29627e;
 }
 
-footer{
+footer {
     max-width: 100%;
     font-weight: 600;
     padding: 10px 5px;
@@ -236,4 +237,13 @@ footer{
     background-color: #afe6a5;
     font-family: 'Courier New', Courier, monospace;
     font-size: larger;
+}
+header,
+nav,
+main,
+section,
+article,
+aside,
+footer{
+    display: block;
 }
