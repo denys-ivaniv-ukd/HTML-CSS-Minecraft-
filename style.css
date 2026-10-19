@@ -238,12 +238,13 @@ footer {
     font-family: 'Courier New', Courier, monospace;
     font-size: larger;
 }
+
 header,
 nav,
 main,
 section,
 article,
 aside,
-footer{
+footer {
     display: block;
 }
