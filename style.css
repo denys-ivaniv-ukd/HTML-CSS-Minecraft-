@@ -248,3 +248,8 @@ aside,
 footer {
     display: block;
 }
+
+#main_2{
+    display: flex;
+    justify-content: left;
+}
