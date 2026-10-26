@@ -118,12 +118,10 @@ ol {
 .site-header {
     position: sticky;
     top: 0px;
-    right: 0px;
-    width: 10px;
-    border: 5px solid greenyellow;
-    box-shadow: black 10px;
-    height: 312px;
+    height: auto;
     width: 100%;
+    border: 5px solid greenyellow;
+    background-color: #1b5e20;
     z-index: 100;
 }
 
@@ -211,11 +209,14 @@ ol {
 }
 
 #links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     padding: 20px;
-    right: -1px;
-    bottom: 80px;
-    background-color: #7eb858;
+    background-color: green;
+    gap: 170px;
+    right: 50px;
     list-style: none
 }
 
@@ -249,7 +250,48 @@ footer {
     display: block;
 }
 
-#main_2{
+#main_2 {
     display: flex;
     justify-content: left;
 }
+
+form {
+    max-width: 600px;
+    margin: 5px;
+    border: 2px solid #1e3b26;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: blue;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);}
+button{
+    width: 100%;
+    background-color: #1e3b26;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: yellow;}

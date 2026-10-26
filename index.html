@@ -18,7 +18,7 @@
 <body>
     <header class="site-header">
         <div class="container-logo">
-            <img width="300" height="300" src="photo/images_Mine.png" alt="лого Minecraft">
+            <img width="100" height="100" src="photo/images_Mine.png" alt="лого Minecraft">
             <nav aria-label="Головне меню сайту">
                 <ul id="links">
                     <li><a href="#start">Головний сайт Майнкрафту</a></li>
@@ -122,19 +122,39 @@
 
         <br>
         <section id="choice">
-            <h2 id="main_2">Вибір</h2>
-            <form action="#" method="POST">
+            <h2 id="main_2">Про вас</h2>
+            <form action="#" method="post">
                 <label for="text">Введіть текст:</label>
                 <input type="text" name="user_name" id="text" minlength="0" placeholder="Krytoi_Vitalik" required>
                 <br>
                 <label for="email">Введіть email:</label>
-                <input type="email" name="user_email" id="email" placeholder="Krytoi_Vitalik993@">
+                <input type="email" name="user_email" id="email" placeholder="Krytoi_Vitalik993@" required>
                 <br>
-                <select>
-                    <option value="" disabled selected>Pickaxe</option>
-                    <option></option>
+                <label for="material">Оберіть матеріал:</label>
+                <select id="material" name="material">
+                    <option value="" disabled selected>Оберіть матеріал</option>
+                    <option value="almaz">Алмаз</option>
+                    <option value="izumrud">Ізумруд</option>
+                    <option value="vugillya">Вугілля</option>
+                    <option value="zalizo">Залізо</option>
+                    <option value="zoloto">Золото</option>
+                    <option value="other">Додатковий варіант</option>
                 </select>
-
+                <br>
+                <label for="textarea">Додатковий варіант:</label>
+                <textarea id="textarea" name="textarea" rows="4"></textarea>
+            </form>
+            <form action="#" method="post">
+                <input type="radio" id="contact-email" name="contact_method" value="email">
+                <label for="contact-email">Відповісти на Email</label>
+                <br>
+                <input type="radio" id="contact-phone" name="contact_method" value="phone">
+                <label for="contact-phone">Зателефонувати</label>
+                <br>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Я погоджуюсь передати дані на сайт</label>
+                <br>
+                <button type="submit">Надіслати повідомлення</button>
             </form>
         </section>
         <table border="1" class="card">
