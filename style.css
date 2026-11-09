@@ -31,9 +31,9 @@ td {
 }
 
 #page-title {
-    padding: 10px;
-    font-size: 3em;
-    font-weight: 800;
+    padding: 3px;
+    font-size: 40px;
+    font-weight: 600;
     text-align: center;
 
 }
@@ -142,9 +142,8 @@ ol {
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 50px;
     height: auto;
     object-fit: cover;
 
@@ -171,16 +170,14 @@ ol {
 }
 
 .badge {
-    position: absolute;
     font-family: 'Times New Roman', Times;
-    top: 5px;
-    left: 400px;
     width: 200px;
-    height: auto;
+    max-width: 100%;
+    margin: 0 auto 10px auto;
     text-align: center;
     background-color: gold;
     color: #ed8477;
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-radius: 5px;
 }
 
@@ -214,7 +211,7 @@ ol {
     position: relative;
     padding: 20px;
     background-color: green;
-    gap: 170px;
+    gap: 70px;
     right: 50px;
     list-style: none
 }
@@ -252,6 +249,7 @@ footer {
 #main_2 {
     display: flex;
     justify-content: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 form {
@@ -313,7 +311,6 @@ button:hover {
 
 #page-title2 {
     font-size: 30px;
-    padding: 6px;
 }
 
 .card_ul {
@@ -396,12 +393,146 @@ button[type="submit"]:active {
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
 }
 
+#viki {
+    transition: transform 0.3s linear, box-shadow 0.3s linear,
+        background-color 0.3s linear, color 0.3s;
+}
+
 #viki:hover {
     transform: translateX(40px) scale(1.05);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+
 }
 
 #logo-mine:active {
     transform: translateY(-3px) scale(1.02);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#video-off-mine {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+    .back-to-top {
+        max-width: 100%;
+        height: auto;
+        position: fixed;
+    }
+
+    .container-logo {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #links {
+        position: sticky;
+        right: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card_ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    #page-title {
+        font-size: 30px;
+        padding: 10px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container-logo {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    body {
+        padding-top: 130px;
+        scroll-padding-top: 140px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .card,
+    article {
+        width: 100%;
+        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    form {
+        width: 100%;
+        margin: 0;
+        padding: 15px
+    }
+
+    button[type="submit"],
+    button,
+    .back-to-top {
+        height: 44px;
+        width: 44px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .back-to-top {
+        width: 100%;
+        height: auto;
+        min-height: 44px;
+    }
+
+    button[type="submit"]{    width: 100%;
+        height: auto;}
+}
+
+/* ADD FOR PHONE IN FORM *
