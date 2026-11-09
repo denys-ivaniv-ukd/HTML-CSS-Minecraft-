@@ -184,7 +184,7 @@ ol {
 .back-to-top {
     position: fixed;
     bottom: 25px;
-    right: 25px;
+    right: 20px;
     background-color: #e2ffe4;
     color: black;
     border-radius: 7px;
@@ -388,8 +388,13 @@ button[type="submit"]:active {
     transform: translateX(50px) scale(1.08);
 }
 
+.back-to-top {
+    transition: transform 0.3s linear, box-shadow 0.3s linear,
+        background-color 0.3s linear, color 0.3s;
+}
+
 .back-to-top:hover {
-    transform: translateY(-6px) scale(1.005);
+    transform: translateY(-10px) scale(1.05);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
 }
 
@@ -408,11 +413,17 @@ button[type="submit"]:active {
     transform: translateY(-3px) scale(1.02);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
 }
-#links{transition: transform 0.3s linear, box-shadow 0.3s linear,
+
+#links {
+    transition: transform 0.3s linear, box-shadow 0.3s linear,
         background-color 0.3s linear, color 0.3s;
 }
-#links:hover{  transform: translateY(-6px) scale(1.005);
+
+#links:hover {
+    transform: translateY(-6px) scale(1.005);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -425,117 +436,132 @@ img {
     display: block;
 }
 
-body {
-    overflow-x: hidden;
-}
+input {
+    transition: transform 0.3s linear, box-shadow 0.3s linear,
+        background-color 0.3s linear, color 0.3s;}
 
-@media screen and (max-width: 1024px) {
-    .back-to-top {
-        max-width: 100%;
-        height: auto;
-        position: fixed;
-    }
+    input:hover {
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);}
+/* work with form again */
+        body {
+            overflow-x: hidden;
+        }
 
-    .container-logo {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
+        @media screen and (max-width: 1024px) {
+            .back-to-top {
+                max-width: 100%;
+                height: auto;
+                position: fixed;
+                right: 10px;
+            }
 
-    #links {
-        position: sticky;
-        right: auto;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        width: 100%;
-        padding: 10px;
-    }
+            .container-logo {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
 
-    .card_ul {
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-        font-size: 15px;
-    }
+            #links {
+                position: sticky;
+                right: auto;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                width: 100%;
+                padding: 10px;
+            }
 
-    section {
-        padding: 20px;
-    }
+            .card_ul {
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                width: 100%;
+                padding: 10px;
+                text-align: center;
+                font-size: 15px;
+            }
 
-    #page-title {
-        font-size: 30px;
-        padding: 10px;
-    }
-}
+            section {
+                padding: 20px;
+            }
 
-
-@media screen and (max-width: 768px) {
-    .container-logo {
-        flex-direction: column;
-        gap: 12px;
-        align-items: center;
-    }
-
-    header nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 8px;
-    }
-
-    body {
-        padding-top: 130px;
-        scroll-padding-top: 140px;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .card,
-    article {
-        width: 100%;
-        margin: 0;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    form {
-        width: 100%;
-        margin: 0;
-        padding: 15px
-    }
-
-    button[type="submit"],
-    button,
-    .back-to-top {
-        height: 44px;
-        width: 44px;
-    }
-
-}
+            #page-title {
+                font-size: 30px;
+                padding: 10px;
+            }
+        }
 
 
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 22px;
-    }
+        @media screen and (max-width: 768px) {
+            .container-logo {
+                flex-direction: column;
+                gap: 12px;
+                align-items: center;
+            }
 
-    h2 {
-        font-size: 20px;
-    }
+            header nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px;
+            }
 
-    .back-to-top {
-        width: 100%;
-        height: auto;
-        min-height: 44px;
-    }
+            body {
+                padding-top: 130px;
+                scroll-padding-top: 140px;
+            }
 
-    button[type="submit"]{    width: 100%;
-        height: auto;}
-}
-}
+            .gallery {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .card,
+            article {
+                width: 100%;
+                margin: 0;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            form {
+                width: 100%;
+                margin: 0;
+                padding: 15px
+            }
+
+            .back-to-top {
+                min-height: 44px;
+                min-width: 44px;
+            }
+
+            button,
+            button[type="submit"] {
+                width: 100%;
+                height: auto;
+            }
+
+        }
+
+
+        @media screen and (max-width: 480px) {
+
+            h1 {
+                font-size: 22px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .back-to-top {
+                width: 100%;
+                height: auto;
+                min-height: 44px;
+            }
+
+            button[type="submit"] {
+                width: 100%;
+                height: auto;
+            }
+        }
